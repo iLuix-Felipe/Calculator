@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: #85ffbd;
+  background: linear-gradient(45deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.grid-container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  border-radius: 10px;
+}
+.grid-container .output {
+  grid-column: 1/-1;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
+}
+.grid-container .output .previous-operand {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+}
+.grid-container .output .current-operand {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.grid-container button {
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #111;
+}
+.grid-container button:hover {
+  background-color: #fff;
+  color: #0093e9;
+  border-radius: 5px;
+  outline: none;
+}
+.grid-container .operator {
+  background: #0093e9;
+  border: none;
+}
+.grid-container .span-two {
+  grid-column: span 2;
+}/*# sourceMappingURL=style.css.map */
